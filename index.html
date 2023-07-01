@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mohamed Ayman</title>
+  <link rel="stylesheet" type="text/css" href="css/btn.css">
+  <link rel="stylesheet" type="text/css" href="css/pro.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/threes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body style="background-color: rgb(23, 107, 135); ">
+  <header style="background-color: rgb(0, 28, 48);">
+    <h1 style="text-align: left;">Mohamed</h1>
+    <nav>
+      <ul style="text-align: right;">
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#about">About Me</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- <section style="color: white; display: flex; justify-content: center;"> -->
+    <!-- <p >Hi , I am Mohamed</p> -->
+    <h2 style="color: white; margin-left: 75px;">Hi , I am Mohamed a Software Engineer</h2>
+    <br>
+    <button class="transparent-button" onclick="window.open(
+        'https://drive.google.com/file/d/1nXKbpTdu3a4AiggT63f96qfX7xolTQrJ/view')" style="margin-left: 75px;">My Resume</button>
+<!-- </section> -->
+<section id="projects" style="margin-left: 25px;">
+    <h2 style="color: white;">Projects</h2>
+    <div class="project" onclick="window.open('https://github.com/M-Bahy/GUC-System-Opener')">
+      <img src="images/icon.png" alt="Project 1">
+      <h3>Guc System opener</h3>
+      <p>Open and log into the guc system automatically</p>
+    </div>
+    <div class="project" onclick="window.open('https://github.com/M-Bahy/Banking-System')">
+      <img src="images/logo.png" alt="Project 2">
+      <h3>Banking System</h3>
+      <p>Front end for an online banking system</p>
+    </div>
+    <div class="project" onclick="window.open('https://github.com/M-Bahy/DataBase-Engine')">
+        <img src="images/database.png" alt="Project 3">
+        <h3>Database Engine</h3>
+        <p>CURD operations and indexing and selecting</p>
+      </div>
+      <br>
+      <div class="project" onclick="window.open('https://github.com/M-Bahy/Tourism-website')">
+        <img src="images/tourism.png" alt="Project 4">
+        <h3>Tourism Website</h3>
+        <p>Discover the world and add places to your favourites list</p>
+      </div>
+      <div class="project" onclick="window.open('https://github.com/M-Bahy/OS-Simulation')">
+        <img src="images/windows.png" alt="Project 5">
+        <h3>Operating System</h3>
+        <p>Simulation of scheduling, calls and memory operation</p>
+      </div>
+      <div class="project" onclick="window.open('https://github.com/M-Bahy/GUC-System-Opener')">
+        <img src="images/cpu.png" alt="Project 6">
+        <h3>Coputer Architecture</h3>
+        <p>Simulation of von neumann architecture</p>
+      </div>
+    <!-- Add more project divs as needed -->
+  </section>
+  
+<!-- 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Write a brief introduction about yourself.</p>
+  </section> -->
+  <section id="contact">
+    <h2 style="margin-left: 25px; color: white;">Contact Me</h2>
+    <ul class="wrapper" >
+        <li class="icon facebook">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github" onclick="window.open('https://github.com/M-Bahy')"></i></span>
+        </li>
+        <li class="icon twitter">
+            <span class="tooltip">LinkedIn</span>
+            <span><i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/mohamed-ayman-847476240/')"></i></span>
+        </li>
+        <li class="icon instagram">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fab fa-twitter" onclick="window.open('https://twitter.com/MohamedABahy')"></i></span>
+        </li>
+        <li class="icon mail">
+            <span class="tooltip">Mail</span>
+            <span><i class="fas fa-envelope" onclick="sendEmail();"></i></span>
+        </li>
+        <li class="icon wt">
+            <span class="tooltip">Whatsapp</span>
+            <span><i class="fab fa-whatsapp" onclick="window.open('https://api.whatsapp.com/send/?phone=%2B201007299971&text&type=phone_number&app_absent=0')"></i></span>
+        </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Bahy</p>
+  </footer>
+  <script>
+    function sendEmail() {
+      window.location.href = "mailto:mohamedayman2942002@gmail.com";
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

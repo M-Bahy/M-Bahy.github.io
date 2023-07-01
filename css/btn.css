@@ -1,0 +1,19 @@
+.transparent-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .transparent-button:hover {
+    background-color: #1877F2;
+    color: white;
+  }
+  button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+  

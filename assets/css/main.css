@@ -139,7 +139,7 @@
     .muted { color: var(--muted); }
     .hidden { display:none !important; }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1024px) {
       .hero { grid-template-columns: 1fr; }
       .projects .card { grid-column: span 12; }
       .contact { grid-template-columns: 1fr; }

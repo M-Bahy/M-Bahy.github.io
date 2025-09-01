@@ -139,13 +139,19 @@
     .muted { color: var(--muted); }
     .hidden { display:none !important; }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; }
       .projects .card { grid-column: span 12; }
       .contact { grid-template-columns: 1fr; }
-      .nav-links { display:none; }
+      .nav-links { display:none !important; }
       .menu { display:inline-grid; }
     }
+
+    @media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+  }
+}
 
     /* Simple enter animations */
     .reveal { opacity: 0; transform: translateY(14px) scale(.98); filter: blur(2px); transition: all .7s cubic-bezier(.2,.7,.1,1); }

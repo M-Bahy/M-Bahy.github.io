@@ -1,87 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mohamed Ayman</title>
-  <link rel="stylesheet" type="text/css" href="css/btn.css">
-  <link rel="stylesheet" type="text/css" href="css/pro.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/threes.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The portfolio of Mohamed Ayman, a software engineer." />
+  <title>Mohamed Ayman Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body style="background-color: rgb(23, 107, 135); ">
-  <header style="background-color: rgb(0, 28, 48);">
-    <h1 style="text-align: left;">Mohamed</h1>
-    <nav>
-      <ul style="text-align: right;">
-        <li><a href="#projects">Projects</a></li>
-        <!-- <li><a href="#about">About Me</a></li> -->
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" focusable="false"><path fill="#fff" d="M3 10.5l9-7 9 7V20a2 2 0 0 1-2 2h-4a1 1 0 0 1-1-1v-5h-4v5a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2v-9.5z"/></svg>      
+        </span>
+        <span>Mohamed Ayman</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌗</button>
+        <a class="btn" href="https://drive.usercontent.google.com/download?id=1zzSWhaxecq0xhHWSWVaL539wC-ibLHrJ&export=download&authuser=0" id="downloadCV" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a1 1 0 011 1v9.59l2.3-2.3a1 1 0 011.4 1.42l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 111.4-1.42L11 13.59V4a1 1 0 011-1z"/><path d="M5 20a1 1 0 100 2h14a1 1 0 100-2H5z"/></svg>
+          <span>Resume</span>
+        </a>
+      </div>
+    </div>
   </header>
-<!-- <section style="color: white; display: flex; justify-content: center;"> -->
-    <!-- <p >Hi , I am Mohamed</p> -->
-    <h2 style="color: white; margin-left: 75px;">Hi , I am Mohamed a Software Engineer</h2>
-    <br>
-    <button class="transparent-button" onclick="window.open(
-        'https://drive.google.com/file/d/1zzSWhaxecq0xhHWSWVaL539wC-ibLHrJ/view')" style="margin-left: 75px;">My Resume</button>
-<!-- </section> -->
-<section id="projects" style="margin-left: 25px;">
-    <h2 style="color: white;">Projects</h2>
-    <div class="project" onclick="window.open('https://github.com/M-Bahy/GUC-System-Opener')">
-      <img src="images/icon.png" alt="Project 1">
-      <h3 style="color: white;">Guc System opener</h3>
-      <p>Open and log into the guc system automatically</p>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="reveal">
+        <h1>Hi, I’m <span style="background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent;">Mohamed</span> — a Software Engineer building scalable products.</h1>
+        <p>Full‑stack developer focused on innovation, performance and clean design systems. I turn ideas into goals and goals into achievements.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-card" style="margin-top:1.2rem">
+            <div class="avatar" aria-hidden="true">
+            <img src="assets/img/Incorta.png" alt="Incorta" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+          <div>
+              Software Engineer Intern @ Incorta · <span class="muted">Available from 1/11/2025</span> 
+          </div>
+        </div>
+      </div>
+     <div class="about__img">
+        <img src="assets/img/me.png" alt="Mohamed Ayman"/>
     </div>
-    <div class="project" onclick="window.open('https://github.com/M-Bahy/Banking-System')">
-      <img src="images/logo.png" alt="Project 2">
-      <h3 style="color: white;">Banking System</h3>
-      <p>Front end for an online banking system</p>
-    </div>
-    <div class="project" onclick="window.open('https://github.com/M-Bahy/DataBase-Engine')">
-        <img src="images/database.png" alt="Project 3">
-        <h3 style="color: white;">Database Engine</h3>
-        <p>CURD operations and indexing and selecting</p>
+    </section>
+
+    <section id="projects" class="container">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
       </div>
-      <br>
-      <div class="project" onclick="window.open('https://github.com/M-Bahy/Tourism-website')">
-        <img src="images/tourism.png" alt="Project 4">
-        <h3 style="color: white;">Tourism Website</h3>
-        <p>Discover the world and add places to your favourites list</p>
+      <div class="projects">
+        <!-- Microservices -->
+        <article class="card reveal">
+            <img class="card media" src="assets/img/Microservices.png" alt="Microservices">
+          <div class="card-body">
+            <h3>Talabat Backend Clone</h3>
+            <p class="muted">A comprehensive microservices platform, following modern distributed system principles and containerization best practices.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">RabbitMQ</span>
+            </div>
+          </div>
+          <div class="card-footer" style="display: flex; justify-content: center;">
+            <a class="link" href="https://github.com/M-Bahy/Talabat-Backend-Clone" target="_blank" rel="noopener">View On GitHub</a>
+            </div>
+        </article>
+        <!-- CNN -->
+        <article class="card reveal">
+          <img class="card media" src="assets/img/CNN.png" alt="CNN">
+          <div class="card-body">
+            <h3>Emotion Vision</h3>
+            <p class="muted">A convolutional neural network built from scratch with max pooling and ReLU for emotion classification in Egyptian movies.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">PyTorch</span>
+            </div>
+          </div>
+            <div class="card-footer" style="display: flex; justify-content: center;">
+            <a class="link" href="https://github.com/M-Bahy/Emotion-Vision" target="_blank" rel="noopener">View On GitHub</a>
+            </div>
+        </article>
+        <!-- ML -->
+        <article class="card reveal">
+          <img class="card media" src="assets/img/ML.gif" alt="ML">
+          <div class="card-body">
+            <h3>Heart Failure Prediction</h3>
+            <p class="muted">Binary classification of heart disease using multiple ML models with a focus on high recall and strong F1 performance.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+          </div>
+          <div class="card-footer" style="display: flex; justify-content: center;">
+            <a class="link" href="https://github.com/M-Bahy/heart-failure-prediction" target="_blank" rel="noopener">View On GitHub</a>
+            </div>
+        </article>
+        <!-- MERN -->
+        <article class="card reveal">
+          <img class="card media" src="assets/img/MERN.png" alt="MERN">
+          <div class="card-body">
+            <h3>El7a2ny</h3>
+            <p class="muted">A fully virtual clinic and pharmacy systems with real-time chatting and video calling between patients and doctors.</p>
+            <div class="tags">
+              <span class="tag">MongoDB</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
+          <div class="card-footer" style="display: flex; justify-content: center;">
+            <a class="link" href="https://github.com/M-Bahy/Virtual-Clinic" target="_blank" rel="noopener">View On GitHub</a>
+            </div>
+        </article>
+        <!-- Diablo -->
+        <article class="card reveal">
+          <img class="card media" src="assets/img/Diablo.jpg" alt="Diablo">
+          <div class="card-body">
+            <h3>Diablo</h3>
+            <p class="muted">Re-implemented the famous role playing game Diablo with two separate levels and two playable characters to choose from.</p>
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">Unity Asset Store</span>
+            </div>
+          </div>
+          <div class="card-footer" style="display: flex; justify-content: center;">
+            <a class="link" href="https://github.com/M-Bahy/Diablo-wannabe" target="_blank" rel="noopener">View On GitHub</a>
+            </div>
+        </article>
+        <!-- Embedded -->
+        <article class="card reveal">
+          <img class="card media" src="assets/img/Embedded.png" alt="Embedded">
+          <div class="card-body">
+            <h3>Embedded Security System</h3>
+            <p class="muted">An embedded theft detection system with integrated voice command password authentication and signal transmission.</p>
+            <div class="tags">
+              <span class="tag">C</span>
+              <span class="tag">Raspberry PI Pico W</span>
+            </div>
+          </div>
+          <div class="card-footer" style="display: flex; justify-content: center;">
+            <a class="link" href="https://github.com/M-Bahy/Embedded-security-system" target="_blank" rel="noopener">View On GitHub</a>
+            </div>
+        </article>
       </div>
-      <div class="project" onclick="window.open('https://github.com/M-Bahy/OS-Simulation')">
-        <img src="images/windows.png" alt="Project 5">
-        <h3 style="color: white;">Operating System</h3>
-        <p>Simulation of scheduling, calls and memory operation</p>
+    </section>
+
+    <section id="skills" class="container">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
       </div>
-      <div class="project" onclick="window.open('https://github.com/M-Bahy/Computer-Architecture')">
-        <img src="images/cpu.png" alt="Project 6">
-        <h3 style="color: white;">Coputer Architecture</h3>
-        <p>Simulation of von neumann architecture</p>
+      <div class="grid-3">
+        <div class="item reveal">
+          <h3>Languages & Databases</h3>
+          <div class="chips" style="margin-top:.5rem">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">C#</span>
+            <span class="chip">SQL</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Redis</span>
+            <span class="chip">Supabase</span>
+          </div>
+        </div>
+        <div class="item reveal">
+          <h3>Frameworks</h3>
+          <div class="chips" style="margin-top:.5rem">
+            <span class="chip">Node.js</span>
+            <span class="chip">React</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">NestJs</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">JUnit</span>
+            <span class="chip">Jest</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">ASP.NET Core</span>
+            <span class="chip">MERN stack</span>
+          </div>
+        </div>
+        <div class="item reveal">
+          <h3>Tools</h3>
+          <div class="chips" style="margin-top:.5rem">
+             <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">Jenkins (CI/CD)</span>
+            <span class="chip">Git/Github</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Unity</span>
+            <span class="chip">Linux</span>
+            <span class="chip">RabbitMQ</span>
+            <span class="chip">Jira</span>
+            <span class="chip">Slack</span>
+          </div>
+        </div>
       </div>
-    <!-- Add more project divs as needed -->
-  </section>
-  
-<!-- 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself.</p>
-  </section> -->
-  <section id="contact">
-    <h2 style="margin-left: 25px; color: white;">Contact Me</h2>
-    <ul class="wrapper" >
-        <li class="icon facebook">
-            <span class="tooltip">Github</span>
-            <span><i class="fab fa-github" onclick="window.open('https://github.com/M-Bahy')"></i></span>
-        </li>
-        <li class="icon twitter">
-            <span class="tooltip">LinkedIn</span>
-            <span><i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/mohamed-ayman-847476240/')"></i></span>
-        </li>
-        <li class="icon instagram">
-            <span class="tooltip">Twitter</span>
-            <span><i class="fab fa-twitter" onclick="window.open('https://twitter.com/MohamedABahy')"></i></span>
-        </li>
+    </section>
+
+    <section id="experience" class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="item reveal">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/img/Incorta.png" alt="Incorta" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div>
+              <h3>Software Engineer Intern · Incorta</h3>
+              <small>Aug 2025 — Present · Cairo, Egypt</small>
+            </div>
+          </div>
+          <p class="muted">Implemented observability by setting up logs (Loki), traces (Tempo), and metrics (InfluxDB) for the scheduling module & Integrated with Grafana enabling efficient monitoring, root cause analysis and improved debugging.</p>
+        </div>
+
+         <div class="item reveal">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/img/NBE Dark.png" data-dark="assets/img/NBE Dark.png" data-light="assets/img/NBE Light.jpg" alt="NBE" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div>
+              <h3>Infrastructure Engineer Intern · NBE</h3>
+              <small>Aug 2024 — Sep 2024 · Cairo, Egypt</small>
+            </div>
+          </div>
+          <p class="muted">Created an executable to remove outliers from a MySQL dataset and transform the data into a more compact format & Used Docker and Kubernetes for reliable and scalable deployment.</p>
+        </div>
+
+        <div class="item reveal">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/img/C-DRiVeS Dark.png" data-dark="assets/img/C-DRiVeS Dark.png" data-light="assets/img/C-DRiVeS Light.jpeg" alt="C-DRiVeS" style="width:100%;height:100%;object-fit:fill;" />
+            </div>
+            <div>
+              <h3>Research Intern · C-DRiVeS</h3>
+              <small>Jul 2024 — Aug 2024 · Cairo, Egypt</small>
+            </div>
+          </div>
+          <p class="muted">Led a group of 5 researchers and achieved paper acceptance in a peer-reviewed ITS publication & Published my research paper at the 6th IEEE ICCA Conference, 2024.</p>
+        </div>
+
+        <div class="item reveal">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/img/CBE Dark.png" data-dark="assets/img/CBE Dark.png" data-light="assets/img/CBE Light.png" alt="CBE" style="width:100%;height:100%;object-fit:fill;" />
+            </div>
+            <div>
+              <h3>Software Engineer Intern · CBE</h3>
+              <small>Aug 2023 — Sep 2023 · Cairo, Egypt</small>
+            </div>
+          </div>
+          <p class="muted">Developed a system to read data from Egyptian ID cards and verify the ID photo with a real-time image & Implemented a machine learning model to recognize Arabic numbers.</p>
+        </div>
+
+        <div class="item reveal">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="avatar" aria-hidden="true">
+              <img src="assets/img/GUC Dark.png" data-dark="assets/img/GUC Dark.png" data-light="assets/img/GUC Light.jpg" alt="GUC" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div>
+              <h3>Software Engineer Intern · GUC</h3>
+              <small>Jul 2023 — Aug 2023 · Cairo, Egypt</small>
+            </div>
+          </div>
+          <p class="muted">Developed a system that generates the schedules following the constraint programming approach & Documented and reviewed legacy codebase.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+     <ul class="wrapper" >
         <li class="icon mail">
             <span class="tooltip">Mail</span>
             <span><i class="fas fa-envelope" onclick="sendEmail();"></i></span>
@@ -90,18 +305,32 @@
             <span class="tooltip">Whatsapp</span>
             <span><i class="fab fa-whatsapp" onclick="window.open('https://api.whatsapp.com/send/?phone=%2B201007299971&text&type=phone_number&app_absent=0')"></i></span>
         </li>
+        <li class="icon twitter">
+            <span class="tooltip">Resume</span>
+            <span><i class="fas fa-file-text" onclick="window.open('https://drive.google.com/file/d/1zzSWhaxecq0xhHWSWVaL539wC-ibLHrJ/view?usp=sharing')"></i></span>
+        </li>
+        <li class="icon twitter">
+            <span class="tooltip">LinkedIn</span>
+            <span><i class="fab fa-linkedin" onclick="window.open('https://linkedin.com/in/M-A-Bahy/')"></i></span>
+        </li>
+        <li class="icon facebook">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github" onclick="window.open('https://github.com/M-Bahy')"></i></span>
+        </li>
     </ul>
-  </section>
+    </section>
+  </main>
 
+<hr style="border: none; border-top: 10px solid var(--panel); margin: 2rem 0 0 0;">
   <footer>
-    <p>&copy; 2023 Bahy</p>
+    <div class="container">
+              <div class="grid-2">
+                      <strong>Mohamed Ayman Bahy © 2025</strong>
+            </div>
+      </div>
   </footer>
-  <script>
-    function sendEmail() {
-      window.location.href = "mailto:mohamedayman2942002@gmail.com";
-    }
-  </script>
-  <script src="script.js"></script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
+      

@@ -143,16 +143,7 @@
       .hero { grid-template-columns: 1fr; }
       .projects .card { grid-column: span 12; }
       .contact { grid-template-columns: 1fr; }
-      
-      /* OLD START */
-      /* .nav-links { display:none; } */
-      /* OLD END */
-
-       /* NEW START */
-      .nav-links { display: flex; }
-      .nav-links { display:flex; overflow-x:auto; -webkit-overflow-scrolling:touch; }
-       /* NEW END */
-
+      .nav-links { display:none; }
       .menu { display:inline-grid; }
     }
 
